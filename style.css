@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Abhaya Libre', serif;
+}
+
+:root {
+    --padding: 2rem 4rem;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+header {
+    position: relative;
+}
+
+.background {
+    height: 100vh;
+}
+
+.logo {
+    height: 10rem;
+}
+
+h1 {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: white;
+
+    font-size: 8rem;
+    font-weight: 400;
+
+    width: 100%;
+    top: 20%;
+    padding: 2rem;
+    gap: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex: 1;
+}
+
+footer {
+    color: white;
+
+    font-size: 1.15rem;
+
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+footer>p>a {
+    color: white;
+}
+
+main {
+    background-color: rgb(231, 231, 231);
+
+    font-size: 2rem;
+
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.description {
+    padding: var(--padding);
+}
+
+.form {
+    background-color: white;
+
+    font-size: 1.75rem;
+}
+
+fieldset {
+    border: none;
+    box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.3);
+
+    padding: var(--padding);
+    gap: 2rem;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container {
+    height: 100%;
+    width: 80%;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+label {
+    display: block;
+}
+
+.input-box {
+    height: auto;
+    width: 50%;
+}
+
+input {
+    border: 1px solid #e5e7eb;
+
+    height: 2rem;
+    width: 80%;
+}
+
+input:not(:focus):not(:placeholder-shown) {
+    border: 1px solid red;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="tel"]:valid,
+input[type="password"]:valid {
+    border: 1px solid greenyellow;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.sign-up {
+    padding: var(--padding);
+}
+
+.sign-up a {
+    color: #596D48;
+
+    text-decoration: none;
+}
+
+.sign-up a:hover {
+    color: #707070;
+}
+
+button {
+    color: white;
+    background-color: #596D48;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    padding: 1rem 3rem;
+    margin-bottom: 0.75rem;
+}
+
+button:hover {
+    background-color: #70885b;
+
+    cursor: pointer;
+}
