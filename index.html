@@ -36,36 +36,38 @@
                     <div class="form-container">
                         <p class="input-box">
                             <label for="first">First Name</label>
-                            <input type="text" id="first" name="first_name" placeholder=" " required>
+                            <input type="text" id="first" class="inputs" name="first_name" placeholder=" " required>
                         </p>
                         <p class="input-box">
                             <label for="last">Last Name</label>
-                            <input type="text" id="last" name="last_name" placeholder=" " required>
+                            <input type="text" id="last" class="inputs" name="last_name" placeholder=" " required>
                         </p>
                         <p class="input-box">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <input type="email" id="email" class="inputs" name="email" placeholder=" " required>
                         </p>
                         <p class="input-box">
                             <label for="number">Phone Number</label>
-                            <input type="tel" id="number" name="number" placeholder=" " required>
+                            <input type="tel" id="number" class="inputs" name="number" placeholder=" " required>
                         </p>
                         <p class="input-box">
-                            <label for="pwd">Password</label>
-                            <input type="password" id="pwd" class="passwords" name="password" placeholder=" " required>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" class="inputs" name="password" onChange="check()"
+                                placeholder=" " required>
                         </p>
                         <p class="input-box">
-                            <label for="pwd-confirm">Confirm Password</label>
-                            <input type="password" id="pwd-confirm" class="password" placeholder=" " required>
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" class="inputs" placeholder=" "
+                                onChange="check()" required>
                         </p>
                     </div>
                 </fieldset>
-            </form>
         </section>
         <section class="sign-up">
-            <button>Create Account</button>
+            <input type="submit" value="Create Account">
             <p>Already have an account? <a href="Log in">Log in</a></p>
         </section>
+        </form>
     </main>
     <footer>
         <script> </script>

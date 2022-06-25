@@ -31,15 +31,12 @@ header {
 h1 {
     background-color: rgb(0, 0, 0, 0.5);
     color: white;
-
     font-size: 8rem;
     font-weight: 400;
-
     width: 100%;
     top: 20%;
     padding: 2rem;
     gap: 1rem;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,9 +46,7 @@ h1 {
 
 footer {
     color: white;
-
     font-size: 1.15rem;
-
     bottom: 1rem;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -64,11 +59,8 @@ footer>p>a {
 
 main {
     background-color: rgb(231, 231, 231);
-
     font-size: 2rem;
-
     gap: 2rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,17 +72,14 @@ main {
 
 .form {
     background-color: white;
-
     font-size: 1.75rem;
 }
 
 fieldset {
     border: none;
     box-shadow: 0 0.3em 1em rgba(0, 0, 0, 0.3);
-
     padding: var(--padding);
     gap: 2rem;
-
     display: flex;
     flex-direction: column;
 }
@@ -98,7 +87,6 @@ fieldset {
 .form-container {
     height: 100%;
     width: 80%;
-
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -115,13 +103,16 @@ label {
 
 input {
     border: 1px solid #e5e7eb;
-
     height: 2rem;
     width: 80%;
 }
 
 input:not(:focus):not(:placeholder-shown) {
     border: 1px solid red;
+}
+
+input[type="submit"]:not(:focus) {
+    border: none;
 }
 
 input[type="text"]:valid,
@@ -131,17 +122,12 @@ input[type="password"]:valid {
     border: 1px solid greenyellow;
 }
 
-.error {
-    border: 1px solid red;
-}
-
 .sign-up {
     padding: var(--padding);
 }
 
 .sign-up a {
     color: #596D48;
-
     text-decoration: none;
 }
 
@@ -149,21 +135,18 @@ input[type="password"]:valid {
     color: #707070;
 }
 
-button {
+input[type="submit"] {
+    width: 20%;
     color: white;
-    background-color: #596D48;
     border: none;
+    background-color: #596D48;
     border-radius: 4px;
-
     font-size: 1.5rem;
     font-weight: bolder;
-
-    padding: 1rem 3rem;
     margin-bottom: 0.75rem;
 }
 
 button:hover {
     background-color: #70885b;
-
     cursor: pointer;
 }
